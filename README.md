@@ -25,3 +25,31 @@ forked from [https://github.com/haradai1262/NeurIPS-Education-Challenge-2020] to
 ## Task
 
 The task analyzed is *Task 1*, whether the student will choose the correct answer.
+
+## Setup
+
+Each solution needs to be set up in its own way. Ensure that you have downloaded the data and put it in repo_home/data.
+
+### Arghosh
+
+The solution by Ghosh and Lan requires some data preprocessing scripts to be run. First create a soft link to the public dataset:
+
+```sh
+cd entries/arghosh
+ln -s ../../data/ public_data
+```
+
+Next, generate the expected JSON formatted data.
+
+```sh
+mkdir public_data/personal_data
+python preprocessing.py
+```
+
+Then download the starter kit and create the second set of preprocessed data.
+
+```sh
+mkdir starter_kit
+wget -qO- https://dqanonymousdata.blob.core.windows.net/neurips-public/starter_kit.zip | bsdtar -xf - ./starter_kit
+python preprocessing_2.py
+```
