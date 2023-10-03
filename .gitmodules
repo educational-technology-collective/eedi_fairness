@@ -1,0 +1,6 @@
+[submodule "entries/arghosh"]
+	path = entries/arghosh
+	url = https://github.com/educational-technology-collective/eedi_fairness_arghosh
+[submodule "entries/haradai1262"]
+	path = entries/haradai1262
+	url = https://github.com/educational-technology-collective/eedi_fairness_haradai1262
