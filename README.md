@@ -50,6 +50,7 @@ Then download the starter kit and create the second set of preprocessed data.
 
 ```sh
 mkdir starter_kit
+mkdir public_data/converted_datasets
 wget -qO- https://dqanonymousdata.blob.core.windows.net/neurips-public/starter_kit.zip | bsdtar -xf - ./starter_kit
 python preprocessing_2.py
 ```
