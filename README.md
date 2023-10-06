@@ -30,6 +30,8 @@ The task analyzed is *Task 1*, whether the student will choose the correct answe
 
 Each solution needs to be set up in its own way. Ensure that you have downloaded the data and put it in repo_home/data.
 
+Submissions have been modified in good faith, with bugs addressed where possible and telemetry logging added with MLFlow.
+
 ### Arghosh
 
 The solution by Ghosh and Lan requires some data preprocessing scripts to be run. First create a soft link to the public dataset:
