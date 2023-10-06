@@ -56,3 +56,9 @@ mkdir public_data/converted_datasets
 wget -qO- https://dqanonymousdata.blob.core.windows.net/neurips-public/starter_kit.zip | bsdtar -xf - ./starter_kit
 python preprocessing_2.py
 ```
+
+## Running Experiments
+
+This repository is set up to log telemetry with MLFLow. It is expected that you have installed MLFlow and configured the following three environment variables: `MLFLOW_TRACKING_USERNAME`, `MLFLOW_TRACKING_PASSWORD`, `MLFLOW_TRACKING_URI`.
+
+The main entry script for running experiments is `run_experiments.py`
