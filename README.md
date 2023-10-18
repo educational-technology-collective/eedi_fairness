@@ -11,8 +11,19 @@ Download the Eedi dataset from [https://dqanonymousdata.blob.core.windows.net/ne
 ```sh
 mkdir data
 wget -qO- https://dqanonymousdata.blob.core.windows.net/neurips-public/data.zip | bsdtar -xf - ./data/
-
 ```
+
+There is also a starter kit which was given to participants. It can be downloaded with the following:
+
+```sh
+cd data
+wget -qO- https://dqanonymousdata.blob.core.windows.net/neurips-public/starter_kit.zip | bsdtar -xf - ./starter_kit/
+```
+
+This dataset includes a few specific files relevant to this analysis:
+1. `data/train_data/train_task_1_2.csv` which has 15867851 observations. This data is used to train competition models.
+2. `data/test_data/test_public_answers_task_1.csv` which has 1983482 observations. This data is used to evaluate the competition models but is not blinded from the participants.
+3. `data/test_data/test_private_answers_task_1.csv` which as 1983483 observations. This data is used as a hold out set for evaluation of the competition models.
 
 ## Model Submissions
 
@@ -21,6 +32,10 @@ Two submissions to the challenge are considered, and are initialized as forks fr
 1. Option Tracing: Beyond Binary Knowledge Tracing Aritra Ghosh and Andrew S. Lan, forked from [https://github.com/arghosh/NeurIPSEducation2020] to [https://github.com/educational-technology-collective/eedi_fairness_arghosh]
 2. Practical Strategies for Improving the Performance of Student Response Prediction Daichi Takehara and Yuto Shinahara
 forked from [https://github.com/haradai1262/NeurIPS-Education-Challenge-2020] to [https://github.com/educational-technology-collective/eedi_fairness_haradai1262]
+
+In addition, the starter kit for the competition also includes a base implementation
+
+3. Diagnostic questions: The neurips 2020 education challenge. Wang, Zichao and Lamb, Angus and Saveliev, Evgeny and Cameron, Pashmina and Zaykov, Yordan and Hernandez-Lobato, Jose Miguel and Turner, Richard E and Baraniuk, Richard G and Barton, Craig and Jones, Simon Peyton and Woodhead, Simon and Zhang, Cheng. arXiv preprint arXiv:2007.12061
 
 ## Task
 
