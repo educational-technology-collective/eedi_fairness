@@ -36,7 +36,7 @@ with mlflow.start_run(experiment_id=experiment.experiment_id):
          "model":"lstm",
          "lr":1e-4,
          "weight_decay":1e-6,
-         "max_epochs":10,
+         "max_epochs":100,
          "epoch_threshold":10}
     # run training
     arghosh.run(experiment.experiment_id,model_parameters,run_parameters)

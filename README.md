@@ -25,6 +25,11 @@ This dataset includes a few specific files relevant to this analysis:
 2. `data/test_data/test_public_answers_task_1.csv` which has 1983482 observations. This data is used to evaluate the competition models but is not blinded from the participants.
 3. `data/test_data/test_private_answers_task_1.csv` which as 1983483 observations. This data is used as a hold out set for evaluation of the competition models.
 
+The starter kit has one dataset of interest:
+1. `data/starter_kit/submission_task_1_2.csv` -- this file is the same as the private holdout data but has no target variable (whether the question was answered correctly or not), and it is expected that submissions will use this to generate an output file to validate.
+
+**Note: There are potential issues of data leakage, in that the participants are not blinded to the students and questions they will be evaluated on. It would be possible, for instance, for a model to focus on generating good predictions for the students that appear more frequestly in the holdout dataset at the expense of predictions for students who appear less frequently in the houldout data but are in the training data.**
+
 ## Model Submissions
 
 Two submissions to the challenge are considered, and are initialized as forks from the submission repositories:
